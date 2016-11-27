@@ -1,0 +1,17 @@
+#server:
+#  port: 20001
+#  context-path: /wantravel
+spring:
+  application:
+    name: speedTest
+  datasource:
+        url: jdbc:postgresql://localhost:5432/test
+        username: postgres
+        password: 111
+  jpa:
+        hibernate:
+          ddl-auto: validate
+        show-sql: false
+logging:
+  level:
+    org.springframework.web: 'INFO'
