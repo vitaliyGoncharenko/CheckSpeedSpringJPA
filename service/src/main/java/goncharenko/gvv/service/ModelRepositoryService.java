@@ -8,6 +8,8 @@ public interface ModelRepositoryService {
 
     void insertListModel();
 
+    void insertOneRow();
+
     void selectListModel();
 
     void selectListModelUseQuery();

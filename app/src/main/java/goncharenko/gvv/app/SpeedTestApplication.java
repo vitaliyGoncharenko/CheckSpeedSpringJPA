@@ -25,9 +25,11 @@ public class SpeedTestApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
+        repositoryService.deleteAll();
+        repositoryService.insertOneRow();
         repositoryService.insertListModel();
-        repositoryService.selectListModel();
         repositoryService.selectListModelUseQuery();
+        repositoryService.selectListModel();
         repositoryService.deleteAll();
     }
 
